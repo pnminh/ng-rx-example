@@ -1,0 +1,16 @@
+<h2>Add person</h2>
+<div class="container">
+  <div class="row form-group">
+    <label for="firstName">First Name:</label>
+    <input type="text" class="form-control" id="firstName" [(ngModel)]="addedPerson.firstName">
+  </div>
+  <div class="row form-group">
+    <label for="lastName">Last Name:</label>
+    <input type="text" class="form-control" id="lastName" [(ngModel)]="addedPerson.lastName">
+  </div>
+  <div class="row form-group">
+    <label for="age">Age:</label>
+    <input type="text" class="form-control" id="age" [(ngModel)]="addedPerson.age">
+  </div>
+  <button type="button" (click)="addPerson()">Add Person</button>
+</div>
